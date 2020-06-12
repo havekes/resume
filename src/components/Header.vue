@@ -1,9 +1,7 @@
 <template>
-  <div class="header flex justify-between items-end border-b pb-2 mb-2">
+  <div class="header flex justify-between items-end">
     <div class="text-left">
-      <div class="uppercase font-bold text-xl tracking-wider">
-        {{ info.name }}
-      </div>
+      <div class="uppercase font-bold text-2xl text-gray-800 tracking-wider mb-4">{{ info.name }}</div>
       <div>{{ info.phone }}</div>
       <div>
         <a :href="emailLink">{{ info.email }}</a>
