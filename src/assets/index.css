@@ -4,8 +4,9 @@
 
 @media print {
   @page {
-    margin: 1in;
+    margin: 0.75in;
   }
+
   html {
     font-size: 12px;
   }
@@ -15,8 +16,21 @@
   .print-hidden {
     display: none;
   }
-  #app {
+  #app,
+  .container {
     padding: 0;
+  }
+
+  /* Safari hack since it doesn't support @page */
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) and (display: flow-root) {
+      html {
+        margin: 0.5in;
+      }
+      .page-break {
+        padding-top: 0.5in;
+      }
+    }
   }
 }
 
@@ -27,15 +41,16 @@
 }
 
 body {
-  font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir Next', Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 h2 {
-  @apply text-xl font-bold tracking-wider text-left text-gray-800 uppercase;
+  @apply text-xl font-semibold tracking-wider text-left text-gray-800 uppercase;
 }
 
 h3 {
-  @apply font-bold text-left text-gray-800;
+  @apply font-semibold text-left text-gray-800;
 }
 
 .link {
@@ -43,4 +58,9 @@ h3 {
 }
 .link:hover {
   @apply text-gray-800;
+}
+
+p,
+li {
+  @apply leading-7;
 }

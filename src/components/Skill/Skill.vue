@@ -1,8 +1,8 @@
 <template>
-  <div class="skill flex items-center justify-between my-2">
-    <div class="text-gray-800 mr-2 w-16 text-left">{{ name }}</div>
-    <div class="flex-1 text-gray-500 text-sm">{{ description }}</div>
-    <div class="level flex items-end h-4 w-12">
+  <div class="flex items-center justify-between my-2 skill">
+    <div class="w-16 mr-2 text-left text-gray-800">{{ name }}</div>
+    <div class="flex-1 text-sm text-gray-500">{{ description }}</div>
+    <div class="flex items-end w-12 h-4 level">
       <div v-for="l in levels" :style="{ height: height(l) }" :class="[background(l)]" :key="l"></div>
     </div>
   </div>
@@ -12,7 +12,7 @@
 const LEVELS = 3
 const BASE_LEVEL_HEIGHT = 0.5
 
-const LEVEL_BG = 'bg-gray-300'
+const LEVEL_BG = 'bg-gray-200'
 const LEVEL_BG_ACTIVE = 'bg-gray-800'
 
 export default {

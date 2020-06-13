@@ -1,65 +1,67 @@
 <template>
-  <div id="app" class="container px-16 pb-16 m-auto" v-if="content">
-    <div class="my-6 text-right link print-hidden">
+  <div id="app" class="pb-16" v-if="content">
+    <div class="container px-16 m-auto my-4 text-right link print-hidden">
       <span v-if="language == 'en'" @click="setLanguage('fr')">Francais <FaIcon icon="globe" class="ml-1"/></span>
       <span v-if="language == 'fr'" @click="setLanguage('en')">English <FaIcon icon="globe" class="ml-1"/></span>
     </div>
 
     <Header :info="content.info" />
 
-    <Section :title="summary.title" class="mt-8">
-      <p class="text-justify">{{ summary.content }}</p>
-    </Section>
+    <div class="container px-16 m-auto">
+      <Section :title="summary.title" class="mt-8">
+        <p class="text-justify">{{ summary.content }}</p>
+      </Section>
 
-    <div class="flex flex-wrap mt-8">
-      <Section :title="projects.title" class="w-2/3 pr-4">
-        <Experience
-          v-for="e in projects.items"
-          :key="e.title"
-          :title="e.title"
-          :date="e.date"
-          :description="e.description"
-        >
+      <div class="flex flex-wrap mt-8">
+        <Section :title="projects.title" class="w-2/3 pr-4">
+          <Experience
+            v-for="e in projects.items"
+            :key="e.title"
+            :title="e.title"
+            :date="e.date"
+            :description="e.description"
+          >
+            <ul>
+              <li v-for="t in e.tasks" :key="t">{{ t }}</li>
+            </ul>
+          </Experience>
+        </Section>
+
+        <Section :title="skills.title" class="w-1/3 pl-4">
+          <SkillCategory v-for="c in skills.categories" :key="c.name" :title="c.name">
+            <Skill
+              v-for="s in c.skills"
+              :key="s.name"
+              :name="s.name"
+              :description="s.description"
+              :level="s.level"
+            ></Skill>
+          </SkillCategory>
+        </Section>
+      </div>
+
+      <Section :title="work.title" class="w-full page-break">
+        <Experience v-for="e in work.items" :key="e.title" :title="e.title" :date="e.date" :description="e.description">
           <ul>
             <li v-for="t in e.tasks" :key="t">{{ t }}</li>
           </ul>
         </Experience>
       </Section>
 
-      <Section :title="skills.title" class="w-1/3 pl-4">
-        <SkillCategory v-for="c in skills.categories" :key="c.name" :title="c.name">
-          <Skill
-            v-for="s in c.skills"
-            :key="s.name"
-            :name="s.name"
-            :description="s.description"
-            :level="s.level"
-          ></Skill>
-        </SkillCategory>
+      <Section :title="school.title" class="w-full">
+        <Experience
+          v-for="e in school.items"
+          :key="e.title"
+          :title="e.title"
+          :date="e.date"
+          :description="e.description"
+          >{{ e.content }}</Experience
+        >
       </Section>
-    </div>
 
-    <Section :title="work.title" class="w-full page-break">
-      <Experience v-for="e in work.items" :key="e.title" :title="e.title" :date="e.date" :description="e.description">
-        <ul>
-          <li v-for="t in e.tasks" :key="t">{{ t }}</li>
-        </ul>
-      </Experience>
-    </Section>
-
-    <Section :title="school.title" class="w-full">
-      <Experience
-        v-for="e in school.items"
-        :key="e.title"
-        :title="e.title"
-        :date="e.date"
-        :description="e.description"
-        >{{ e.content }}</Experience
-      >
-    </Section>
-
-    <div class="mt-6 text-center print-hidden">
-      <a href="" class="link"> <FaIcon :icon="['fab', 'github']" /> Source</a>
+      <div class="mt-6 text-center print-hidden">
+        <a href="" class="link"> <FaIcon :icon="['fab', 'github']" /> Source</a>
+      </div>
     </div>
   </div>
 </template>

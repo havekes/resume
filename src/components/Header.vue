@@ -1,21 +1,31 @@
 <template>
-  <div class="flex items-end justify-between header">
-    <div class="text-left">
-      <div class="flex items-center mb-4">
-        <h1 class="mr-4 text-2xl font-bold tracking-wider text-gray-800 uppercase ">{{ info.name }}</h1>
-        <a v-if="info.linkedin" :href="info.linkedin" class="text-3xl text-gray-600 hover:text-gray-800 print-hidden">
-          <FaIcon :icon="['fab', 'linkedin']" />
-        </a>
+  <div class="flex items-end text-gray-100 bg-gray-500 header">
+    <div class="container flex items-center px-16 m-auto">
+      <div class="p-2 mr-8 -my-4 bg-gray-100 rounded-full print-hidden">
+        <img v-if="info.photo" :src="info.photo" class="w-40 h-40 rounded-full" />
       </div>
-      <div>{{ info.phone }}</div>
-      <div>
-        <a :href="emailLink">{{ info.email }}</a>
-      </div>
-    </div>
-    <div class="text-right">
-      <div>{{ info.location }}</div>
-      <div>
-        <a :href="websiteLink">{{ info.website }}</a>
+
+      <div class="flex-1">
+        <div class="flex items-center mb-2">
+          <h1 class="flex-1 mr-4 text-2xl font-semibold tracking-widest text-white uppercase name">{{ info.name }}</h1>
+          <a v-if="info.linkedin" :href="info.linkedin" class="text-3xl text-gray-200 hover:text-white print-hidden">
+            <FaIcon :icon="['fab', 'linkedin']" />
+          </a>
+        </div>
+        <div class="flex mb-2">
+          <div class="flex-1">
+            <p class="font-semibold">{{ info.phone }}</p>
+            <p>
+              <a :href="emailLink">{{ info.email }}</a>
+            </p>
+          </div>
+          <div>
+            <p class="font-semibold">{{ info.location }}</p>
+            <p>
+              <a :href="websiteLink">{{ info.website }}</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -34,3 +44,14 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@media print {
+  .header {
+    @apply bg-transparent text-black;
+  }
+  .name {
+    @apply text-gray-800;
+  }
+}
+</style>

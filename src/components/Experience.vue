@@ -1,11 +1,11 @@
 <template>
-  <div class="experience mb-4">
+  <div class="mb-4 experience">
     <div class="flex items-center">
       <h3 class="mr-4">{{ title }}</h3>
       <div class="flex-1 border-b"></div>
       <h3 class="ml-4">{{ date }}</h3>
     </div>
-    <div class="my-2" v-if="description">{{description}}</div>
+    <div class="my-2" v-if="description">{{ description }}</div>
     <slot></slot>
   </div>
 </template>
@@ -34,6 +34,6 @@ export default {
   @apply list-disc ml-10;
 }
 .experience ul > li {
-  @apply pl-2 my-1;
+  @apply pl-2;
 }
 </style>
