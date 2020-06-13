@@ -1,14 +1,19 @@
 <template>
-  <div class="header flex justify-between items-end">
+  <div class="flex items-end justify-between header">
     <div class="text-left">
-      <div class="uppercase font-bold text-2xl text-gray-800 tracking-wider mb-4">{{ info.name }}</div>
+      <div class="flex items-center mb-4">
+        <h1 class="mr-4 text-2xl font-bold tracking-wider text-gray-800 uppercase ">{{ info.name }}</h1>
+        <a v-if="info.linkedin" :href="info.linkedin" class="text-3xl text-gray-600 hover:text-gray-800 print-hidden">
+          <FaIcon :icon="['fab', 'linkedin']" />
+        </a>
+      </div>
       <div>{{ info.phone }}</div>
       <div>
         <a :href="emailLink">{{ info.email }}</a>
       </div>
     </div>
     <div class="text-right">
-      <div>{{ info.address }}</div>
+      <div>{{ info.location }}</div>
       <div>
         <a :href="websiteLink">{{ info.website }}</a>
       </div>
@@ -29,5 +34,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

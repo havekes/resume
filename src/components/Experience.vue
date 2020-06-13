@@ -5,9 +5,7 @@
       <div class="flex-1 border-b"></div>
       <h3 class="ml-4">{{ date }}</h3>
     </div>
-    <div class="my-2">
-      <slot name="description"></slot>
-    </div>
+    <div class="my-2" v-if="description">{{description}}</div>
     <slot></slot>
   </div>
 </template>
@@ -22,6 +20,10 @@ export default {
     date: {
       type: String,
       required: true,
+    },
+    description: {
+      type: String,
+      required: false,
     },
   },
 }

@@ -1,0 +1,189 @@
+{
+  "info": {
+    "name": "Grégoire Havekes",
+    "email": "greg@havek.es",
+    "phone": "438-522-1988",
+    "location": "Montréal, QC",
+    "website": "greg.havek.es",
+    "linkedin": "https://www.linkedin.com/in/ghavekes/",
+    "photo": ""
+  },
+  "sections": {
+    "summary": {
+      "title": "Summary",
+      "content": "Passionné par la programmation depuis mon plus jeune âge, je suis autodidacte et j’ai réalisé plusieurs projets personnels et professionnels. Je suis consciencieux, je dispose d’un sens aigu du détail et mes compétences sont diversifiés. Même si je n’ai pas encore complété mon baccalauréat en génie logiciel, je cherche à utiliser mon expérience acquise au cours des dernières années et travailler sur des projets de plus grande envergure."
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "Contrails",
+          "date": "Depuis 2020",
+          "description": "Application de gestion d'extensions pour un simulateur de vol",
+          "tasks": [
+            "Backend Go, PostgreSQL",
+            "Frontend Vue.js, Electron",
+            "Configuration de serveurs avec Ansible, Docker, Nginx"
+          ]
+        },
+        {
+          "title": "Administration de serveurs",
+          "date": "Depuis 2015",
+          "description": "Configuration de réseau personnel",
+          "tasks": [
+            "Firewall pfSense, serveur FreeNAS et OpenVPN",
+            "Configuration d'applications dans un environement Docker"
+          ]
+        },
+        {
+          "title": "Simstatus",
+          "date": "2018 - 2019",
+          "description": "Application",
+          "tasks": ["Backend Django, frontend Angular", "Configuration d’un serveur avec Docker, Nginx et PostgreSQL"]
+        },
+        {
+          "title": "Away stats",
+          "date": "2014 - 2016",
+          "description": "Site web pour statistiques des joueurs de World of Tanks",
+          "tasks": ["Backend PHP, Symfony", "Frontend JavaScript, JQuery"]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "categories": [
+        {
+          "name": "Backend",
+          "skills": [
+            {
+              "name": "Python",
+              "description": "Django",
+              "level": 100
+            },
+            {
+              "name": "PHP",
+              "description": "Symfony",
+              "level": 100
+            },
+            {
+              "name": "Java",
+              "description": "Spring Boot",
+              "level": 50
+            },
+            {
+              "name": "Node.js",
+              "level": 50
+            },
+            {
+              "name": "Go",
+              "level": 50
+            },
+            {
+              "name": "C#",
+              "description": "ASP.NET",
+              "level": 25
+            }
+          ]
+        },
+        {
+          "name": "Frontend",
+          "skills": [
+            {
+              "name": "Vue.js",
+              "level": 100
+            },
+            {
+              "name": "Angular",
+              "level": 50
+            }
+          ]
+        },
+        {
+          "name": "Outils",
+          "skills": [
+            {
+              "name": "Docker",
+              "level": 75
+            },
+            {
+              "name": "Ansible",
+              "level": 75
+            },
+            {
+              "name": "Nginx",
+              "level": 60
+            }
+          ]
+        },
+        {
+          "name": "Autres",
+          "skills": [
+            {
+              "name": "C/C++",
+              "level": 50
+            },
+            {
+              "name": "QML",
+              "level": 25
+            }
+          ]
+        }
+      ]
+    },
+    "work": {
+      "title": "Expériences profesionnelles",
+      "items": [
+        {
+          "title": "Programmeur",
+          "date": "Depuis 2019",
+          "description": "Optimum Informatique, Montréal, QC",
+          "tasks": [
+            "Application web avec Angular, Spring Boot",
+            "Configuration de serveurs Linux",
+            "Déploiement d’applications avec Ansible",
+            "Formations sur Angular et Docker pour les membres de mon équipe",
+            "Communiquer avec les clients et répondre à leurs demandes de support"
+          ]
+        },
+        {
+          "title": "Équipier d'étage",
+          "date": "Mai - août 2019",
+          "description": "Application de gestion d'extensions pour un simulateur de vol",
+          "tasks": ["Répondre aux demandes des clients", "Communiquer avec le département de l’entretien ménager"]
+        },
+        {
+          "title": "Équipier entretien ménager",
+          "date": "2018 - 2019",
+          "description": "Application de gestion d'extensions pour un simulateur de vol",
+          "tasks": [
+            "Approvisionner les réserves des étages en linge",
+            "Porter les bagages pour les clients et répondre à leurs demandes",
+            "Communiquer avec le département de l’entretien ménager"
+          ]
+        }
+      ]
+    },
+    "school": {
+      "title": "Formations",
+      "items": [
+        {
+          "title": "Baccalauréat en informatique et génie logiciel",
+          "date": "Depuis 2018",
+          "description": "Université du Québec à Montréal, QC"
+        },
+        {
+          "title": "Baccalauréat en génie électrique",
+          "date": "2015 - 2017",
+          "description": "Polytechnique Montréal, QC",
+          "content": "Réorientation pour poursuivre ma passion pour la programmation"
+        },
+        {
+          "title": "Baccalauréat scientifique",
+          "date": "2012 - 2015",
+          "description": "Lycée Sacré-Coeur, Yssingeaux, France",
+          "content": "Spécialité physique-chimie"
+        }
+      ]
+    }
+  }
+}
