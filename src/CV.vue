@@ -1,8 +1,14 @@
 <template>
   <div id="app" class="pb-16" v-if="content">
     <div class="container px-16 m-auto my-4 text-right link print-hidden">
-      <span v-if="language == 'en'" @click="setLanguage('fr')">Francais <FaIcon icon="globe" class="ml-1"/></span>
-      <span v-if="language == 'fr'" @click="setLanguage('en')">English <FaIcon icon="globe" class="ml-1"/></span>
+      <span v-if="language == 'en'" @click="setLanguage('fr')">
+        Francais
+        <FaIcon icon="globe" class="ml-1" />
+      </span>
+      <span v-if="language == 'fr'" @click="setLanguage('en')">
+        English
+        <FaIcon icon="globe" class="ml-1" />
+      </span>
     </div>
 
     <Header :info="content.info" />
@@ -41,7 +47,13 @@
       </div>
 
       <Section :title="work.title" class="w-full page-break">
-        <Experience v-for="e in work.items" :key="e.title" :title="e.title" :date="e.date" :description="e.description">
+        <Experience
+          v-for="e in work.items"
+          :key="e.title"
+          :title="e.title"
+          :date="e.date"
+          :description="e.description"
+        >
           <ul>
             <li v-for="t in e.tasks" :key="t">{{ t }}</li>
           </ul>
@@ -55,12 +67,13 @@
           :title="e.title"
           :date="e.date"
           :description="e.description"
-          >{{ e.content }}</Experience
-        >
+        >{{ e.content }}</Experience>
       </Section>
 
       <div class="mt-6 text-center print-hidden">
-        <a href="" class="link"> <FaIcon :icon="['fab', 'github']" /> Source</a>
+        <a href="https://github.com/havekes/resume" class="link">
+          <FaIcon :icon="['fab', 'github']" class="mr-2" />Source
+        </a>
       </div>
     </div>
   </div>

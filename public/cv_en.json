@@ -11,46 +11,43 @@
   "sections": {
     "summary": {
       "title": "Summary",
-      "content": "Passionné par la programmation depuis mon plus jeune âge, je suis autodidacte et j’ai réalisé plusieurs projets personnels et professionnels. Je suis consciencieux, je dispose d’un sens aigu du détail et mes compétences sont diversifiés. Même si je n’ai pas encore complété mon baccalauréat en génie logiciel, je cherche à utiliser mon expérience acquise au cours des dernières années et travailler sur des projets de plus grande envergure."
+      "content": "With a passion for programming since my teenage years, I learned programming on my own and I have worked on multiple projects, both personally and professionally. I am a fast learner, conscientious, and I have strong attention to details. Even tought my bachellor's degree is in progress, I am looking to apply my experience gathered during the last few years on larger scale projects."
     },
     "projects": {
       "title": "Projects",
       "items": [
         {
           "title": "Contrails",
-          "date": "Depuis 2020",
-          "description": "Application de gestion d'extensions pour un simulateur de vol",
+          "date": "Since 2020",
+          "description": "Add-ons management application for a flight simulator",
           "tasks": [
-            "Backend Go, PostgreSQL",
-            "Frontend Vue.js, Electron",
-            "Configuration de serveurs avec Ansible, Docker, Nginx"
+            "Go, PostgreSQL backend",
+            "Vue.js, Electron frontend",
+            "Configured servers using Ansible, Docker, Nginx"
           ]
         },
         {
-          "title": "Administration de serveurs",
-          "date": "Depuis 2015",
-          "description": "Configuration de réseau personnel",
-          "tasks": [
-            "Firewall pfSense, serveur FreeNAS et OpenVPN",
-            "Configuration d'applications dans un environement Docker"
-          ]
+          "title": "Servers administration",
+          "date": "Since 2015",
+          "description": "Home network configuration",
+          "tasks": ["pfSense firewall, FreeNAS and OpenVPN servers", "Configured Docker containers"]
         },
         {
           "title": "Simstatus",
           "date": "2018 - 2019",
-          "description": "Application",
-          "tasks": ["Backend Django, frontend Angular", "Configuration d’un serveur avec Docker, Nginx et PostgreSQL"]
+          "description": "Web interface to manage servers for the Simutrans game",
+          "tasks": ["Django, PostgreSQL backend", "Angular frontend", "Used the Docker API to spawn and manage servers"]
         },
         {
           "title": "Away stats",
           "date": "2014 - 2016",
-          "description": "Site web pour statistiques des joueurs de World of Tanks",
-          "tasks": ["Backend PHP, Symfony", "Frontend JavaScript, JQuery"]
+          "description": "Player statistics website for the World of Tanks game",
+          "tasks": ["PHP, Symfony backend", "JavaScript, JQuery frontend"]
         }
       ]
     },
     "skills": {
-      "title": "Compétences",
+      "title": "Skills",
       "categories": [
         {
           "name": "Backend",
@@ -99,7 +96,7 @@
           ]
         },
         {
-          "name": "Outils",
+          "name": "Tools",
           "skills": [
             {
               "name": "Docker",
@@ -116,7 +113,7 @@
           ]
         },
         {
-          "name": "Autres",
+          "name": "Others",
           "skills": [
             {
               "name": "C/C++",
@@ -131,34 +128,34 @@
       ]
     },
     "work": {
-      "title": "Expériences profesionnelles",
+      "title": "Work experience",
       "items": [
         {
-          "title": "Programmeur",
-          "date": "Depuis 2019",
+          "title": "Programmer",
+          "date": "Since 2019",
           "description": "Optimum Informatique, Montréal, QC",
           "tasks": [
-            "Application web avec Angular, Spring Boot",
-            "Configuration de serveurs Linux",
-            "Déploiement d’applications avec Ansible",
-            "Formations sur Angular et Docker pour les membres de mon équipe",
-            "Communiquer avec les clients et répondre à leurs demandes de support"
+            "Developed a SpringBoot and Angular web app",
+            "Configured of Linux servers and applications deployments",
+            "Created Ansible playbooks for provisioning servers, and installing applications",
+            "Provided Angular and Docker training for my team members",
+            "Interacted with clients regarding their support inquiries"
           ]
         },
         {
-          "title": "Équipier d'étage",
-          "date": "Mai - août 2019",
-          "description": "Application de gestion d'extensions pour un simulateur de vol",
-          "tasks": ["Répondre aux demandes des clients", "Communiquer avec le département de l’entretien ménager"]
+          "title": "Houseman",
+          "date": "May - August 2019",
+          "description": "Add-ons management application for a flight simulator",
+          "tasks": ["Answered to clients’ requests", "Coordinated with housekeeping"]
         },
         {
           "title": "Équipier entretien ménager",
           "date": "2018 - 2019",
           "description": "Application de gestion d'extensions pour un simulateur de vol",
           "tasks": [
-            "Approvisionner les réserves des étages en linge",
-            "Porter les bagages pour les clients et répondre à leurs demandes",
-            "Communiquer avec le département de l’entretien ménager"
+            "Carried clients’ luggages to and from their rooms",
+            "Supplied each floors with linen",
+            "Coordinated with housekeeping"
           ]
         }
       ]
@@ -167,21 +164,21 @@
       "title": "Formations",
       "items": [
         {
-          "title": "Baccalauréat en informatique et génie logiciel",
-          "date": "Depuis 2018",
+          "title": "B.ASc. Software Engineering",
+          "date": "Since 2018",
           "description": "Université du Québec à Montréal, QC"
         },
         {
-          "title": "Baccalauréat en génie électrique",
+          "title": "B.Ing Electrical Engineering",
           "date": "2015 - 2017",
           "description": "Polytechnique Montréal, QC",
-          "content": "Réorientation pour poursuivre ma passion pour la programmation"
+          "content": "Reoriented to pursue my passion in programming and computer science"
         },
         {
           "title": "Baccalauréat scientifique",
           "date": "2012 - 2015",
           "description": "Lycée Sacré-Coeur, Yssingeaux, France",
-          "content": "Spécialité physique-chimie"
+          "content": "Physics-Chemistry specialty"
         }
       ]
     }
