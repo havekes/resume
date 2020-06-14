@@ -1,5 +1,5 @@
 <template>
-  <div class="skill-category mb-4">
+  <div class="mb-4 skill-category">
     <h3>{{ title }}</h3>
     <slot></slot>
   </div>
