@@ -7,9 +7,22 @@
 
       <div class="flex-1">
         <div class="flex items-center mb-2">
-          <h1 class="flex-1 mr-4 text-2xl font-semibold tracking-widest text-white uppercase name">{{ info.name }}</h1>
-          <a v-if="info.linkedin" :href="info.linkedin" class="text-3xl text-gray-200 hover:text-white print-hidden">
+          <h1
+            class="flex-1 mr-4 text-2xl font-semibold tracking-widest text-white uppercase name"
+          >{{ info.name }}</h1>
+          <a
+            v-if="info.linkedin"
+            :href="info.linkedin"
+            class="mr-4 text-3xl text-gray-200 hover:text-white print-hidden"
+          >
             <FaIcon :icon="['fab', 'linkedin']" />
+          </a>
+          <a
+            v-if="info.github"
+            :href="info.github"
+            class="text-3xl text-gray-200 hover:text-white print-hidden"
+          >
+            <FaIcon :icon="['fab', 'github']" />
           </a>
         </div>
         <div class="flex mb-2">
