@@ -12,7 +12,7 @@
   "sections": {
     "summary": {
       "title": "Sommaire",
-      "content": "Passionné par la programmation depuis mon plus jeune âge, je suis autodidacte et j’ai réalisé plusieurs projets personnels et professionnels. Je suis consciencieux, je dispose d’un sens aigu du détail et mes compétences sont diversifiés. Même si je n’ai pas encore complété mon baccalauréat en génie logiciel, je cherche à utiliser mon expérience acquise au cours des dernières années et travailler sur des projets de plus grande envergure."
+      "content": "Passionné par la programmation depuis mon plus jeune âge, je suis autodidacte et j’ai réalisé plusieurs projets personnels et professionnels. Je suis consciencieux, je dispose d’un sens aigu du détail et mes compétences sont diversifiées. Même si je n’ai pas encore complété mon baccalauréat en génie logiciel, je cherche à utiliser mon expérience acquise au cours des dernières années et travailler sur des projets de plus grande envergure."
     },
     "projects": {
       "title": "Projets",
@@ -30,16 +30,16 @@
         {
           "title": "Administration de serveurs",
           "date": "Depuis 2015",
-          "description": "Configuration de réseau personnel",
+          "description": "Configuration de mon réseau personnel",
           "tasks": [
-            "Firewall pfSense, serveur FreeNAS et OpenVPN",
+            "Installation d'un firewall pfSense, serveur FreeNAS et OpenVPN",
             "Configuration d'applications dans un environement Docker"
           ]
         },
         {
           "title": "Simstatus",
           "date": "2018 - 2019",
-          "description": "Application pour gérer les serveurs du jeux Simutrans",
+          "description": "Application pour gérer les serveurs du jeu Simutrans",
           "tasks": [
             "Backend Django, PostgreSQL",
             "Frontend Angular",
@@ -49,7 +49,7 @@
         {
           "title": "Away stats",
           "date": "2014 - 2016",
-          "description": "Site web pour statistiques des joueurs de World of Tanks",
+          "description": "Site web pour statistiques des joueurs du jeu World of Tanks",
           "tasks": ["Backend PHP, Symfony", "Frontend JavaScript, JQuery"]
         }
       ]
@@ -143,7 +143,7 @@
           "date": "Depuis 2019",
           "description": "Optimum Informatique, Montréal, QC",
           "tasks": [
-            "Application web avec Angular, Spring Boot",
+            "Créeation d'une application web avec Angular, Spring Boot",
             "Configuration de serveurs Linux",
             "Déploiement d’applications avec Ansible",
             "Formations sur Angular et Docker pour les membres de mon équipe",
