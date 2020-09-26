@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import CV from './CV.vue'
+import Resume from './Resume.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
@@ -14,5 +14,5 @@ Vue.component('FaIcon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(CV),
+  render: h => h(Resume),
 }).$mount('#app')
