@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-between my-2 skill">
-    <div class="w-16 mr-2 text-left text-gray-800">{{ name }}</div>
+    <div class="w-32 mr-2 text-left text-gray-800">{{ name }}</div>
     <div class="flex-1 text-sm text-gray-500">{{ description }}</div>
     <div class="flex items-end w-12 h-4 level">
       <div v-for="l in levels" :style="{ height: height(l) }" :class="[background(l)]" :key="l"></div>
