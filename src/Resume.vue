@@ -47,13 +47,7 @@
       </div>
 
       <Section :title="work.title" class="w-full page-break">
-        <Experience
-          v-for="e in work.items"
-          :key="e.title"
-          :title="e.title"
-          :date="e.date"
-          :description="e.description"
-        >
+        <Experience v-for="e in work.items" :key="e.title" :title="e.title" :date="e.date" :description="e.description">
           <ul>
             <li v-for="t in e.tasks" :key="t">{{ t }}</li>
           </ul>
@@ -67,7 +61,8 @@
           :title="e.title"
           :date="e.date"
           :description="e.description"
-        >{{ e.content }}</Experience>
+          >{{ e.content }}</Experience
+        >
       </Section>
 
       <div class="mt-6 text-center print-hidden">
@@ -129,8 +124,8 @@ export default {
   },
   methods: {
     loadContent() {
-      let url = 'cv_' + this.language + '.json'
-      axios.get(url).then(response => {
+      let url = 'resume_' + this.language + '.json'
+      axios.get(url).then((response) => {
         this.content = response.data
       })
     },
