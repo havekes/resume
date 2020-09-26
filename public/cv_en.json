@@ -18,7 +18,7 @@
       "title": "Projects",
       "items": [
         {
-          "title": "Contrails",
+          "title": "Contrails (in progress)",
           "date": "Since 2020",
           "description": "Add-ons management application for a flight simulator",
           "tasks": [
@@ -69,17 +69,31 @@
               "level": 50
             },
             {
-              "name": "Node.js",
+              "name": "Go",
               "level": 50
             },
             {
-              "name": "Go",
+              "name": "TypeScript",
+              "description": "Node.js",
               "level": 50
             },
             {
               "name": "C#",
               "description": "ASP.NET",
               "level": 25
+            }
+          ]
+        },
+        {
+          "name": "Databases",
+          "skills": [
+            {
+              "name": "PostgreSQL",
+              "level": 75
+            },
+            {
+              "name": "MongoDB",
+              "level": 50
             }
           ]
         },
@@ -119,10 +133,6 @@
             {
               "name": "C/C++",
               "level": 50
-            },
-            {
-              "name": "QML",
-              "level": 25
             }
           ]
         }
@@ -166,11 +176,11 @@
       "items": [
         {
           "title": "B.ASc. Software Engineering",
-          "date": "Since 2018",
+          "date": "In progress since 2018",
           "description": "Université du Québec à Montréal, QC"
         },
         {
-          "title": "B.Ing Electrical Engineering",
+          "title": "B.Ing Electrical Engineering (reoriented to software engineering)",
           "date": "2015 - 2017",
           "description": "Polytechnique Montréal, QC",
           "content": "Reoriented to pursue my passion in programming and computer science"

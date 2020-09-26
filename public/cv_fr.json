@@ -18,7 +18,7 @@
       "title": "Projets",
       "items": [
         {
-          "title": "Contrails",
+          "title": "Contrails (en cours)",
           "date": "Depuis 2020",
           "description": "Application de gestion d'extensions pour un simulateur de vol",
           "tasks": [
@@ -76,17 +76,31 @@
               "level": 50
             },
             {
-              "name": "Node.js",
+              "name": "Go",
               "level": 50
             },
             {
-              "name": "Go",
+              "name": "TypeScript",
+              "description": "Node.js",
               "level": 50
             },
             {
               "name": "C#",
               "description": "ASP.NET",
               "level": 25
+            }
+          ]
+        },
+        {
+          "name": "Bases de données",
+          "skills": [
+            {
+              "name": "PostgreSQL",
+              "level": 75
+            },
+            {
+              "name": "MongoDB",
+              "level": 50
             }
           ]
         },
@@ -173,11 +187,11 @@
       "items": [
         {
           "title": "Baccalauréat en informatique et génie logiciel",
-          "date": "Depuis 2018",
+          "date": "En cours depuis 2018",
           "description": "Université du Québec à Montréal, QC"
         },
         {
-          "title": "Baccalauréat en génie électrique",
+          "title": "Baccalauréat en génie électrique (réorientation en génie logiciel)",
           "date": "2015 - 2017",
           "description": "Polytechnique Montréal, QC",
           "content": "Réorientation pour poursuivre ma passion pour la programmation"
