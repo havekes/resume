@@ -2,7 +2,7 @@
   <div id="app" class="pb-16" v-if="content">
     <div class="container px-16 m-auto my-4 text-right link print-hidden">
       <span v-if="language == 'en'" @click="setLanguage('fr')">
-        Francais
+        Français
         <FaIcon icon="globe" class="ml-1" />
       </span>
       <span v-if="language == 'fr'" @click="setLanguage('en')">
