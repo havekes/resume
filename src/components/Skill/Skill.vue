@@ -3,7 +3,12 @@
     <div class="w-32 mr-2 text-left text-gray-800">{{ name }}</div>
     <div class="flex-1 text-sm text-gray-500">{{ description }}</div>
     <div class="flex items-end w-12 h-4 level">
-      <div v-for="l in levels" :style="{ height: height(l) }" :class="[background(l)]" :key="l"></div>
+      <div
+        v-for="l in levels"
+        :style="{ height: height(l) }"
+        :class="[background(l)]"
+        :key="l"
+      ></div>
     </div>
   </div>
 </template>
@@ -26,7 +31,7 @@ export default {
   },
   methods: {
     height(l) {
-      return BASE_LEVEL_HEIGHT + 0.25 * l + 'rem'
+      return BASE_LEVEL_HEIGHT + 0.3 * l + 'rem'
     },
     background(l) {
       return l / LEVELS <= this.level / 100 ? LEVEL_BG_ACTIVE : LEVEL_BG
@@ -38,7 +43,7 @@ export default {
 <style>
 .level div {
   @apply w-4;
-  margin-right: 0.1rem;
+  margin-right: 0.2rem;
   box-sizing: border-box;
 }
 </style>

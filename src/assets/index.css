@@ -2,44 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media print {
-  @page {
-    margin: 0.75in;
-  }
-
-  html {
-    font-size: 12px;
-  }
-  .page-break {
-    page-break-before: always;
-  }
-  .print-hidden {
-    display: none;
-  }
-  #app,
-  .container {
-    padding: 0;
-  }
-
-  /* Safari hack since it doesn't support @page */
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) and (display: flow-root) {
-      html {
-        margin: 0.5in;
-      }
-      .page-break {
-        padding-top: 0.5in;
-      }
-    }
-  }
-}
-
-@media screen {
-  body {
-    @apply bg-gray-100;
-  }
-}
-
 body {
   font-family: 'Avenir Next', Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -54,15 +16,24 @@ h3 {
 }
 
 .link {
-  @apply text-gray-500 cursor-pointer;
+  @apply text-gray-700 cursor-pointer;
 }
 .link:hover {
-  @apply text-gray-800;
+  @apply text-gray-500;
 }
 
 p,
 li {
   @apply leading-7;
+}
+
+button {
+  @apply text-gray-100 bg-gray-700;
+  @apply px-6 py-2 rounded-lg;
+}
+
+button:hover {
+  @apply text-white bg-gray-500;
 }
 
 /* Custom font-face otherwise diffrent weights might be missing on client OS */

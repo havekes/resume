@@ -1,0 +1,29 @@
+@page {
+  margin: 0.75in;
+}
+
+html {
+  font-size: 12px;
+}
+.page-break {
+  page-break-before: always;
+}
+.print-hidden {
+  display: none;
+}
+#app,
+.container {
+  padding: 0;
+}
+
+/* Safari hack since it doesn't support @page */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (display: flow-root) {
+    html {
+      margin: 0.5in;
+    }
+    .page-break {
+      padding-top: 0.5in;
+    }
+  }
+}

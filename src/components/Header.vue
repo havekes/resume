@@ -1,7 +1,9 @@
 <template>
   <div class="flex items-end text-gray-100 bg-gray-500 header">
-    <div class="container flex items-center px-16 m-auto">
-      <div class="p-2 mr-8 -my-4 bg-gray-100 rounded-full print-hidden">
+    <div
+      class="container flex flex-wrap items-center justify-center px-4 m-auto md:flex-no-wrap md:px-16"
+    >
+      <div class="p-2 my-2 bg-white rounded-full md:mr-8 md:-my-4 print-hidden">
         <img v-if="info.photo" :src="info.photo" class="w-40 h-40 rounded-full" />
       </div>
 
@@ -9,7 +11,9 @@
         <div class="flex items-center mb-2">
           <h1
             class="flex-1 mr-4 text-2xl font-semibold tracking-widest text-white uppercase name"
-          >{{ info.name }}</h1>
+          >
+            {{ info.name }}
+          </h1>
           <a
             v-if="info.linkedin"
             :href="info.linkedin"
