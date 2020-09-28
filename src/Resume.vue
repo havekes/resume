@@ -1,6 +1,6 @@
 <template>
   <div v-if="content">
-    <div class="container px-16 m-auto my-4 text-right link print-hidden">
+    <div class="container px-4 py-2 m-auto text-right md:py-4 md:px-16 link print-hidden">
       <span v-if="language == 'en'" @click="setLanguage('fr')">
         Français
         <FaIcon icon="globe" class="ml-1" />
@@ -13,13 +13,13 @@
 
     <Header :info="content.info" />
 
-    <div class="container px-16 m-auto">
-      <Section :title="summary.title" class="mt-8">
+    <div class="container px-4 py-2 m-auto space-y-2 md:py-8 md:px-16 md:space-y-8">
+      <Section :title="summary.title">
         <p class="text-justify">{{ summary.content }}</p>
       </Section>
 
-      <div class="flex flex-wrap mt-8">
-        <Section :title="projects.title" class="w-2/3 pr-4">
+      <div class="md:flex md:flex-wrap">
+        <Section :title="projects.title" class="md:w-2/3 md:pr-4">
           <Experience
             v-for="e in projects.items"
             :key="e.title"
@@ -33,7 +33,7 @@
           </Experience>
         </Section>
 
-        <Section :title="skills.title" class="w-1/3 pl-4">
+        <Section :title="skills.title" class="md:w-1/3 md:pl-4">
           <SkillCategory v-for="c in skills.categories" :key="c.name" :title="c.name">
             <Skill
               v-for="s in c.skills"
@@ -71,7 +71,7 @@
         >
       </Section>
 
-      <div class="my-6 text-center print-hidden">
+      <div class="text-center print-hidden">
         <a href="https://github.com/havekes/resume" class="link">
           <FaIcon :icon="['fab', 'github']" class="mr-2" />Source
         </a>

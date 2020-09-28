@@ -1,7 +1,9 @@
 <template>
   <div class="flex items-end text-gray-100 bg-gray-500 header">
-    <div class="container flex items-center px-16 m-auto">
-      <div class="p-2 mr-8 -my-4 bg-white rounded-full print-hidden">
+    <div
+      class="container flex flex-wrap items-center justify-center px-4 m-auto md:flex-no-wrap md:px-16"
+    >
+      <div class="p-2 my-2 bg-white rounded-full md:mr-8 md:-my-4 print-hidden">
         <img v-if="info.photo" :src="info.photo" class="w-40 h-40 rounded-full" />
       </div>
 
