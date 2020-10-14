@@ -33,7 +33,7 @@
           "description": "Configuration de mon réseau personnel",
           "tasks": [
             "Installation d'un firewall pfSense, serveur FreeNAS et OpenVPN",
-            "Configuration d'applications dans un environement Docker"
+            "Configuration d'applications dans un environnement Docker"
           ]
         },
         {
