@@ -28,22 +28,32 @@
           ]
         },
         {
+          "title": "Simstatus",
+          "date": "Since 2017",
+          "description": "Web interface to manage servers for the Simutrans game",
+          "tasks": [
+            "Django, PostgreSQL backend",
+            "Angular frontend",
+            "Used the Docker API to spawn and manage servers"
+          ]
+        },
+        {
           "title": "Servers administration",
           "date": "Since 2015",
           "description": "Home network configuration",
-          "tasks": ["Installed a pfSense firewall, FreeNAS and OpenVPN servers", "Configured Docker containers"]
-        },
-        {
-          "title": "Simstatus",
-          "date": "2018 - 2019",
-          "description": "Web interface to manage servers for the Simutrans game",
-          "tasks": ["Django, PostgreSQL backend", "Angular frontend", "Used the Docker API to spawn and manage servers"]
+          "tasks": [
+            "Installed a pfSense firewall, FreeNAS and OpenVPN servers",
+            "Configured Docker containers"
+          ]
         },
         {
           "title": "Away stats",
-          "date": "2014 - 2016",
+          "date": "2014 - 2015",
           "description": "Player statistics website for the World of Tanks game",
-          "tasks": ["PHP, Symfony backend", "JavaScript, JQuery frontend"]
+          "tasks": [
+            "PHP, Symfony backend",
+            "JavaScript, JQuery frontend"
+          ]
         }
       ]
     },
@@ -157,7 +167,10 @@
           "title": "Houseman",
           "date": "May - August 2019",
           "description": "Delta Hotel by Marriott, Montréal, QC",
-          "tasks": ["Answered to clients’ requests", "Coordinated with housekeeping"]
+          "tasks": [
+            "Answered to clients’ requests",
+            "Coordinated with housekeeping"
+          ]
         },
         {
           "title": "Houseman",
