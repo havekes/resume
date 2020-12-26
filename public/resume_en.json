@@ -143,6 +143,10 @@
             {
               "name": "C/C++",
               "level": 50
+            },
+            {
+              "name": "Machine learning",
+              "level": 25
             }
           ]
         }
@@ -185,12 +189,19 @@
       ]
     },
     "school": {
+      "certificate": "View certificate",
       "title": "Formations",
       "items": [
         {
-          "title": "B.ASc. Software Engineering",
-          "date": "In progress since 2018",
+          "title": "B.A.Sc. Software Engineering",
+          "date": "In progress  ",
           "description": "Université du Québec à Montréal, QC"
+        },
+        {
+          "title": "Machine Learning with Python",
+          "date": "2020",
+          "description": "Online course, offered by MITx",
+          "certificate": "https://courses.edx.org/certificates/604b08391728498f926ca813a960d833"
         },
         {
           "title": "B.Ing Electrical Engineering (reoriented to software engineering)",
