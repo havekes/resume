@@ -67,8 +67,15 @@
           :title="e.title"
           :date="e.date"
           :description="e.description"
-          >{{ e.content }}</Experience
+          :certificate="e.certificate"
         >
+          <template v-slot:default>
+            {{ e.content }}
+          </template>
+          <template v-slot:certificate>
+            {{ school.certificate }}
+          </template>
+        </Experience>
       </Section>
 
       <div class="text-center print-hidden">

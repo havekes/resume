@@ -189,12 +189,19 @@
       ]
     },
     "school": {
+      "certificate": "Accéder au certificat",
       "title": "Formations",
       "items": [
         {
           "title": "Baccalauréat en informatique et génie logiciel",
-          "date": "En cours depuis 2018",
+          "date": "En cours",
           "description": "Université du Québec à Montréal, QC"
+        },
+        {
+          "title": "Machine Learning with Python",
+          "date": "2020",
+          "description": "Cours en ligne, offert par MITx",
+          "certificate": "https://courses.edx.org/certificates/604b08391728498f926ca813a960d833"
         },
         {
           "title": "Baccalauréat en génie électrique (réorientation en génie logiciel)",
