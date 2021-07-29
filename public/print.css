@@ -20,7 +20,7 @@ html {
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (display: flow-root) {
     html {
-      margin: 0.5in;
+      margin: 0.25in 0;
     }
     .page-break {
       padding-top: 0.5in;

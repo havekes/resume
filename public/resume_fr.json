@@ -22,7 +22,7 @@
           "date": "Depuis 2020",
           "description": "Application de gestion d'extensions pour un simulateur de vol",
           "tasks": [
-            "Backend Go, PostgreSQL",
+            "Backend Go, MongoDB",
             "Frontend Vue.js, Electron",
             "Configuration de serveurs avec Ansible, Docker, Nginx"
           ]
@@ -50,10 +50,7 @@
           "title": "Away stats",
           "date": "2014 - 2016",
           "description": "Site web pour statistiques des joueurs du jeu World of Tanks",
-          "tasks": [
-            "Backend PHP, Symfony",
-            "Frontend JavaScript, JQuery"
-          ]
+          "tasks": ["Backend PHP, Symfony", "Frontend JavaScript, JQuery"]
         }
       ]
     },

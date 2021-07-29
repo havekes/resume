@@ -28,12 +28,12 @@ li {
 }
 
 button {
-  @apply text-gray-100 bg-gray-700;
+  @apply text-gray-100 bg-primary-700;
   @apply px-6 py-2 rounded-lg;
 }
 
 button:hover {
-  @apply text-white bg-gray-500;
+  @apply text-white bg-primary-500;
 }
 
 /* Custom font-face otherwise diffrent weights might be missing on client OS */

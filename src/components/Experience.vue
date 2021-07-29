@@ -5,19 +5,24 @@
       <div class="flex-1 mx-2 border-b md:mx-4"></div>
       <h3 class="text-right">{{ date }}</h3>
     </div>
-    <div class="my-2 italic" v-if="description">{{ description }}</div>
-    <slot></slot>
+
+    <div v-if="description" class="my-2 italic">{{ description }}</div>
+
+    <slot>
+      <ul v-if="tasks" class="ml-10 list-disc">
+        <li v-for="t in tasks" :key="t">{{ t }}</li>
+      </ul>
+    </slot>
+
     <a v-if="certificate" :href="certificate" class="flex items-center">
       <svg
-        class="inline w-5 h-5 mr-2"
+        class="inline w-5 h-5 mr-2 stroke-current"
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
         viewBox="0 0 24 24"
-        stroke="currentColor"
+        fill="none"
       >
-        <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path d="M12 14l9-5-9-5-9 5 9 5z" />
         <path
-          fill="#fff"
           d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
         />
         <path
@@ -51,15 +56,10 @@ export default {
       type: String,
       required: false,
     },
+    tasks: {
+      type: Array,
+      required: false,
+    },
   },
 }
 </script>
-
-<style>
-.experience ul {
-  @apply list-disc ml-10;
-}
-.experience ul > li {
-  @apply pl-2;
-}
-</style>

@@ -22,8 +22,8 @@
           "date": "Since 2020",
           "description": "Add-ons management application for a flight simulator",
           "tasks": [
-            "Go, PostgreSQL backend",
-            "Vue.js, Electron frontend",
+            "Go, MongoDB backend",
+            "Vue, Electron frontend",
             "Configured servers using Ansible, Docker, Nginx"
           ]
         },
@@ -50,10 +50,7 @@
           "title": "Away stats",
           "date": "2014 - 2015",
           "description": "Player statistics website for the World of Tanks game",
-          "tasks": [
-            "PHP, Symfony backend",
-            "JavaScript, JQuery frontend"
-          ]
+          "tasks": ["PHP, Symfony backend", "JavaScript, JQuery frontend"]
         }
       ]
     },
@@ -69,6 +66,11 @@
               "level": 100
             },
             {
+              "name": "TypeScript",
+              "description": "Node.js",
+              "level": 100
+            },
+            {
               "name": "PHP",
               "description": "Symfony",
               "level": 100
@@ -81,16 +83,6 @@
             {
               "name": "Go",
               "level": 50
-            },
-            {
-              "name": "TypeScript",
-              "description": "Node.js",
-              "level": 50
-            },
-            {
-              "name": "C#",
-              "description": "ASP.NET",
-              "level": 25
             }
           ]
         },
@@ -111,12 +103,16 @@
           "name": "Frontend",
           "skills": [
             {
-              "name": "Vue.js",
+              "name": "Vue",
               "level": 100
             },
             {
               "name": "Angular",
               "level": 50
+            },
+            {
+              "name": "React",
+              "level": 25
             }
           ]
         },
@@ -124,16 +120,16 @@
           "name": "Tools",
           "skills": [
             {
+              "name": "Linux",
+              "level": 75
+            },
+            {
               "name": "Docker",
               "level": 75
             },
             {
               "name": "Ansible",
               "level": 75
-            },
-            {
-              "name": "Nginx",
-              "level": 60
             }
           ]
         },
@@ -143,6 +139,10 @@
             {
               "name": "C/C++",
               "level": 50
+            },
+            {
+              "name": "C#",
+              "level": 25
             },
             {
               "name": "Machine learning",
@@ -171,10 +171,7 @@
           "title": "Houseman",
           "date": "May - August 2019",
           "description": "Delta Hotel by Marriott, Montréal, QC",
-          "tasks": [
-            "Answered to clients’ requests",
-            "Coordinated with housekeeping"
-          ]
+          "tasks": ["Answered to clients’ requests", "Coordinated with housekeeping"]
         },
         {
           "title": "Houseman",
@@ -193,15 +190,15 @@
       "title": "Formations",
       "items": [
         {
-          "title": "B.A.Sc. Software Engineering",
-          "date": "In progress  ",
-          "description": "Université du Québec à Montréal, QC"
-        },
-        {
           "title": "Machine Learning with Python",
           "date": "2020",
           "description": "Online course, offered by MITx",
           "certificate": "https://courses.edx.org/certificates/604b08391728498f926ca813a960d833"
+        },
+        {
+          "title": "B.A.Sc. Software Engineering",
+          "date": "In progress",
+          "description": "Université du Québec à Montréal, QC"
         },
         {
           "title": "B.Ing Electrical Engineering (reoriented to software engineering)",

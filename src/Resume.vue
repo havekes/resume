@@ -18,22 +18,19 @@
         <p class="text-justify">{{ summary.content }}</p>
       </Section>
 
-      <div class="md:flex md:flex-wrap">
-        <Section :title="projects.title" class="md:w-2/3 md:pr-4">
+      <div class="md:flex md:space-x-6">
+        <Section :title="projects.title" class="md:w-2/3">
           <Experience
             v-for="e in projects.items"
             :key="e.title"
             :title="e.title"
             :date="e.date"
             :description="e.description"
-          >
-            <ul>
-              <li v-for="t in e.tasks" :key="t">{{ t }}</li>
-            </ul>
-          </Experience>
+            :tasks="e.tasks"
+          />
         </Section>
 
-        <Section :title="skills.title" class="md:w-1/3 md:pl-4">
+        <Section :title="skills.title" class="md:w-1/3">
           <SkillCategory v-for="c in skills.categories" :key="c.name" :title="c.name">
             <Skill
               v-for="s in c.skills"
@@ -53,11 +50,8 @@
           :title="e.title"
           :date="e.date"
           :description="e.description"
-        >
-          <ul>
-            <li v-for="t in e.tasks" :key="t">{{ t }}</li>
-          </ul>
-        </Experience>
+          :tasks="e.tasks"
+        />
       </Section>
 
       <Section :title="school.title" class="w-full">
@@ -93,8 +87,6 @@ import Section from '@/components/Section.vue'
 import Experience from '@/components/Experience.vue'
 import Skill from '@/components/Skill/Skill.vue'
 import SkillCategory from '@/components/Skill/SkillCategory.vue'
-
-const axios = require('axios')
 
 export default {
   name: 'App',
@@ -138,9 +130,9 @@ export default {
   methods: {
     loadContent() {
       let url = 'resume_' + this.language + '.json'
-      axios.get(url).then(response => {
-        this.content = response.data
-      })
+      fetch(url)
+        .then(response => response.json())
+        .then(data => (this.content = data))
     },
     setLanguage(lang) {
       this.language = lang

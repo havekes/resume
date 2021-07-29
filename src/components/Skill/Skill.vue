@@ -5,9 +5,10 @@
     <div class="flex items-end w-12 h-4 level">
       <div
         v-for="l in levels"
+        :key="l"
         :style="{ height: height(l) }"
         :class="[background(l)]"
-        :key="l"
+        class="box-border w-4 mr-1"
       ></div>
     </div>
   </div>
@@ -17,11 +18,24 @@
 const LEVELS = 3
 const BASE_LEVEL_HEIGHT = 0.5
 
-const LEVEL_BG = 'bg-gray-200'
-const LEVEL_BG_ACTIVE = 'bg-gray-800'
+const LEVEL_BG = 'bg-primary-200'
+const LEVEL_BG_ACTIVE = 'bg-primary-500'
 
 export default {
-  props: ['name', 'description', 'level'],
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: false,
+    },
+    level: {
+      type: Number,
+      required: true,
+    },
+  },
   data() {
     return {
       levels: Array(LEVELS)
@@ -39,11 +53,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.level div {
-  @apply w-4;
-  margin-right: 0.2rem;
-  box-sizing: border-box;
-}
-</style>

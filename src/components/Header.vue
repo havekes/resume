@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-end text-gray-100 bg-gray-500 header">
+  <div class="flex items-end text-gray-100 bg-primary-500 header">
     <div
       class="container flex flex-wrap items-center justify-center px-4 m-auto md:flex-no-wrap md:px-16"
     >
